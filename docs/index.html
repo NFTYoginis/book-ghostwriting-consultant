@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book-Ghostwriting Consultant — Manuscript Extraction, Not Invention</title>
+<meta name="description" content="A seven-stage manuscript-extraction methodology that turns your own captured words into a finished book — capture, extraction, versioned outline, drafts, named revision passes, cover. Nothing invented; everything sourced to your own words.">
+<meta property="og:title" content="Book-Ghostwriting Consultant">
+<meta property="og:description" content="A seven-stage manuscript-extraction methodology. Nothing invented; everything sourced to your own words.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="website">
+<style>
+  :root {
+    --cream: #faf8f3;
+    --ink: #1a1a1a;
+    --muted: #5b5b5b;
+    --amber: #b5731a;
+    --surface: #fdf3e2;
+    --border: #e8dfc9;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(250,248,243,0.96);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(4px);
+  }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+  .brand { font-weight: 700; font-size: 1.05rem; color: var(--ink); text-decoration: none; }
+  .navlinks { display: flex; gap: 24px; align-items: center; }
+  .navlinks a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  .navlinks a:hover { color: var(--amber); }
+  .btn {
+    display: inline-block; padding: 10px 20px; border-radius: 6px;
+    font-weight: 600; text-decoration: none; font-size: 0.95rem;
+    border: 1px solid transparent; cursor: pointer;
+  }
+  .btn-primary { background: var(--amber); color: #fff; }
+  .btn-primary:hover { background: #9c6015; }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--border); }
+  .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+  header.hero { padding: 96px 0 72px; text-align: center; }
+  header.hero h1 { font-size: 2.6rem; line-height: 1.2; margin: 0 0 20px; max-width: 760px; margin-left: auto; margin-right: auto; }
+  header.hero p.sub { font-size: 1.2rem; color: var(--muted); max-width: 640px; margin: 0 auto 36px; }
+  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  section { padding: 64px 0; border-top: 1px solid var(--border); }
+  section h2 { font-size: 1.8rem; margin-bottom: 8px; }
+  section p.lead { color: var(--muted); max-width: 700px; margin-bottom: 40px; }
+  .stage-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .stage-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 22px; position: relative;
+  }
+  .stage-card .num { font-size: 0.8rem; font-weight: 700; color: var(--amber); text-transform: uppercase; letter-spacing: 0.05em; }
+  .stage-card h3 { margin: 6px 0 8px; font-size: 1.1rem; }
+  .stage-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .stage-card.optional { border-style: dashed; }
+  .sample {
+    background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; margin-bottom: 24px;
+  }
+  .sample h3 { margin-top: 0; }
+  .sample pre {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 6px;
+    padding: 16px; overflow-x: auto; font-size: 0.85rem; line-height: 1.5;
+  }
+  .refusal {
+    border-left: 3px solid var(--amber); padding: 12px 16px; background: var(--surface);
+    font-size: 0.95rem; margin-top: 14px; border-radius: 0 6px 6px 0;
+  }
+  .connect-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 8px; }
+  .connect-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 32px; display: flex; flex-direction: column; gap: 14px;
+  }
+  .connect-card h3 { margin: 0; font-size: 1.3rem; }
+  .connect-card p { margin: 0; color: var(--muted); font-size: 0.98rem; flex: 1; }
+  .connect-card .btn { align-self: flex-start; }
+  .connect-card--accent { border-color: var(--amber); }
+  .proof-block {
+    background: var(--surface); border: 1px dashed var(--border); border-radius: 10px;
+    padding: 32px; text-align: center; color: var(--muted);
+  }
+  .anchor-grounding {
+    font-size: 0.9rem; color: var(--muted); margin-top: 14px;
+  }
+  .setup-steps { counter-reset: step; list-style: none; padding: 0; max-width: 680px; }
+  .setup-steps li {
+    counter-increment: step; position: relative; padding-left: 48px; margin-bottom: 22px;
+  }
+  .setup-steps li::before {
+    content: counter(step); position: absolute; left: 0; top: 0;
+    width: 32px; height: 32px; border-radius: 50%; background: var(--amber); color: #fff;
+    display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;
+  }
+  .faq-item { margin-bottom: 26px; max-width: 760px; }
+  .faq-item h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .faq-item p { margin: 0; color: var(--muted); }
+  footer { padding: 40px 0 60px; border-top: 1px solid var(--border); }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; align-items: center; }
+  footer p { margin: 0; color: var(--muted); font-size: 0.9rem; }
+  footer .credit { font-size: 0.8rem; color: var(--muted); }
+  code { background: var(--surface); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Book-Ghostwriting Consultant</a>
+    <div class="navlinks">
+      <a href="#how-it-works">How it works</a>
+      <a href="#sample-output">Sample output</a>
+      <a href="#setup">Setup</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#setup">Get the repo</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <h1>Your book already exists. It's just not written down yet.</h1>
+    <p class="sub">A seven-stage manuscript-extraction process — capture, extraction, versioned outline, chapters, named revision passes, cover — built for people with real lived material and no writing habit. Nothing is ever invented. Every sentence traces back to something you actually said.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#how-it-works">See how it works</a>
+      <a class="btn btn-ghost" href="#faq">Read the FAQ</a>
+    </div>
+  </div>
+</header>
+
+<section id="how-it-works">
+  <div class="wrap">
+    <h2>What you get</h2>
+    <p class="lead">Seven stages, run in order. Each one has a defined input, a defined output, and a refusal condition — the process never fills a gap with a guess.</p>
+    <div class="stage-grid">
+      <div class="stage-card"><div class="num">Stage 1</div><h3>Capture</h3><p>Record the person talking — a conversation session or serial voice notes — and transcribe it verbatim. No summarizing yet.</p></div>
+      <div class="stage-card"><div class="num">Stage 2</div><h3>Extraction</h3><p>Sort raw talk into a material index and a story bank, before any book structure is imposed.</p></div>
+      <div class="stage-card"><div class="num">Stage 3</div><h3>Versioned outline</h3><p>Status-keyed per chapter, dated and reasoned, with a de-dup ledger, a protected-lines list, and a running "still needed" list.</p></div>
+      <div class="stage-card"><div class="num">Stage 4</div><h3>Chapter draft loop</h3><p>One file per chapter, drafted only from material the outline marks ready. Restructurable mid-process, at your direction.</p></div>
+      <div class="stage-card"><div class="num">Stage 5</div><h3>Named revision passes</h3><p>At minimum a rhythm/read-aloud pass and a stand-out/cut-flat-material pass — each diagnostic first, edits second.</p></div>
+      <div class="stage-card"><div class="num">Stage 6</div><h3>Cover</h3><p>Code-rendered (HTML/JS), not a flat image — so it stays editable after the fact.</p></div>
+      <div class="stage-card optional"><div class="num">Stage 7 · Optional</div><h3>Video / companion site</h3><p>Decided per book, never defaulted. Chapter video and a companion site are two different things — you name which.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sample-output">
+  <div class="wrap">
+    <h2>Sample output</h2>
+    <p class="lead">A worked example of the refusal discipline in action — the core thing this process protects.</p>
+
+    <div class="sample">
+      <h3>Capture → Extraction</h3>
+      <p><strong>Input (verbatim capture, a fragment):</strong> "...and people ask me why I keep doing it every year — the real surprise wasn't the hunger, it was the mirror. You stop eating and suddenly everyone around you starts looking at their own relationship with food."</p>
+      <p><strong>Output — Material Index entry:</strong></p>
+      <pre>Signature section candidate: "The Mirror Effect"
+Summary: Others react to the fast as a mirror for their own
+relationship to food — not commentary on the fast itself.
+Still needed: a specific instance (a concrete scene). The
+pattern is captured; the scene is not — flagged, not invented.</pre>
+      <div class="refusal">If asked to "just write the scene, you can infer roughly what happened" — the answer is: <em>"That's not something you've told me yet — it goes on the still-needed list, not into the draft."</em> The gap stays open until a real capture session fills it.</div>
+    </div>
+  </div>
+</section>
+
+<section id="proof">
+  <div class="wrap">
+    <h2>Track record</h2>
+    <div class="proof-block">
+      <!-- TODO: operator — add real case-study detail / testimonials post-cold-test. Never invented here. -->
+      Proof and case-study detail to come. This process formalizes a method already used to produce six books internally — specific results are added by the operator, not generated here.
+    </div>
+    <p class="anchor-grounding">For context on what this replaces: professional ghostwriters charge <strong>$24,000–$50,000</strong> for a nonfiction manuscript (Reedsy 2026 marketplace data, business/self-help range), before editing, design, and launch costs stack on top.</p>
+  </div>
+</section>
+
+<section id="connect">
+  <div class="wrap">
+    <h2>If you'd rather hand this off</h2>
+    <p class="lead">The seven stages above run complete and free, on their own — nothing below changes that. These are for someone who'd rather not run them personally.</p>
+    <div class="connect-grid">
+      <div class="connect-card connect-card--accent">
+        <h3>The Quiet Scribe</h3>
+        <p>For someone with the material and no appetite for running seven stages themselves, The Quiet Scribe runs this same process with a team behind it — five books shipped in under three months. If you'd rather have it done than do it, that's the option.</p>
+        <a class="btn btn-primary" href="https://thequietscribe.com" target="_blank" rel="noopener">See the Quiet Scribe</a>
+      </div>
+      <div class="connect-card">
+        <h3>Scribe Hands</h3>
+        <p>Once this process gives you something worth announcing — a finished manuscript, a launch post, a line worth pulling — Scribe Hands is what gets it posted across channels without opening five apps by hand. It doesn't draft anything; it takes what's already finished and puts it where readers will see it.</p>
+        <a class="btn btn-ghost" href="https://thequietscribe.com/scribe-hands" target="_blank" rel="noopener">See Scribe Hands</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="setup">
+  <div class="wrap">
+    <h2>Setup</h2>
+    <p class="lead">About 20 minutes to get running.</p>
+    <ol class="setup-steps">
+      <li>Clone or download this repo.</li>
+      <li>Load the folder into a Claude Project, or point a Claude Code session at it.</li>
+      <li>Have Claude read <code>identity.md</code> → <code>rules.md</code> → <code>examples.md</code> → <code>reference/</code>, in that order.</li>
+      <li>Run a real capture session with the author first — stage 1. There's no useful output before real material exists.</li>
+      <li>Say: <em>"I have transcripts from a conversation with [author]. Start extraction."</em> — and let the process route itself from there.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <h3>Will it write things I never said?</h3>
+      <p>No. That's the one rule the whole process is built around. A gap in your material goes on a "still needed" list, never into a draft.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What if I don't have transcripts yet?</h3>
+      <p>Then stage 1 (capture) is the starting point — a recorded conversation or serial voice notes, transcribed verbatim. Every later stage refuses to run ahead of what's actually been captured.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does it write in my voice, or a brand's voice?</h3>
+      <p>Yours. This process carries an industry-professional voice, not a specific brand's — it draws only on your own captured words and protects verbatim phrases you flag so editing never sands them down.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do I need a video or a website?</h3>
+      <p>No — both are optional, decided per book. A chapter-video layer and a companion site are two different offerings; you name which, if either, applies.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can the outline change mid-process?</h3>
+      <p>Yes, at your direction — it's a living document, not a locked contract. Every change is dated and reasoned, and nothing that's already placed gets silently duplicated elsewhere.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>MIT licensed — see <code>LICENSE</code>. · <a href="https://github.com" style="color:var(--muted);">View on GitHub</a></p>
+    <p class="credit">Book-Ghostwriting Consultant — Gabe — Your AI Specialist</p>
+  </div>
+</footer>
+
+</body>
+</html>
