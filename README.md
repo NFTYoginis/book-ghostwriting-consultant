@@ -20,8 +20,8 @@ Full detail per stage: `reference/`. Reusable starter shapes for a new book: `re
 
 ## Setup
 
-1. Load this folder into a Claude Project (or point a Claude Code session at it).
-2. Read `identity.md` → `rules.md` → `examples.md` → `reference/` in that order — same cold-start discipline this specialist itself follows.
+1. Load this folder into a Claude Project, or point a Claude Code session at it — `SKILL.md` lets Claude Code auto-discover and trigger it from a natural request (e.g. "I have transcripts from a conversation, start extraction"); it routes to `identity.md` → `rules.md`, then to the one `reference/stage-*.md` file the active stage needs.
+2. Working from the raw files directly (no `SKILL.md` support): read `identity.md` → `rules.md` → `examples.md` in that order, then open only the `reference/` file for the stage you're actually running — same cold-start discipline this specialist itself follows.
 3. Start a real capture session (stage 1) with the author before asking for anything else. There is no useful output before real captured material exists.
 
 ## First-run prompts
