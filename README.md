@@ -4,6 +4,16 @@ A folder-based ICM specialist that walks a non-technical person with real lived 
 
 This formalizes a process already run six times internally (the operator's own books), most recently and most fully documented on the real production trail of *"Are You Actually Hungry?"* It is not a theory of how ghostwriting should work — it's a repeat of how it already worked.
 
+## What it produces
+
+An example from a real book: the "still needed" list kept while drafting *Are You Actually Hungry?* (`STORY-LIST-MASTER.md`, a working file). Where a chapter has an argument but no captured scene, the gap is listed, not filled. Two entries, quoted as written:
+
+> **The guiding truth (pinned):** Claude can always write prose; it can never invent 30 years of Gabe. The prose is done. The 30 years is the gap.
+
+> 3. **MEDIUM — The Health-door person: came for one symptom, left with something else.** *(live placeholder ch02:64 · Story Bank #9 ◐)* — the chapter *names* the pattern ("almost every time, something else happens that you didn't come for") and then drops a placeholder exactly where the human face should be. One real person (or honestly, one composite-flagged-as-such) who walked in for the bloating and walked out having heard the marriage / the job. **Honesty-frame note:** must stay within "people he met / watched pass through centers," never "client I supervised."
+
+The companion anecdote list carries a status key: each item is ✅ captured, ◐ partial (theme captured, still wants one specific story) or ○ open. The refusal that produces this list is in [`examples.md`](examples.md).
+
 ## What this is
 
 Seven stages, run in order, each with a defined input, output, and refusal condition:
@@ -35,6 +45,23 @@ Full detail per stage: `reference/`. Reusable starter shapes for a new book: `re
 
 See `identity.md` and `rules.md` for the full contract. In short: it never fills a material gap with invented content — a gap goes on the "still needed" list, not into a draft — and it carries an industry-professional voice, not any specific brand's voice.
 
+## Where this fits
+
+The book-production shelf, numbered as in the catalog. The skill in this repo is in bold.
+
+1. **Book Ghostwriting** (this repo)
+2. [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill)
+3. [Title & Positioning](https://github.com/NFTYoginis/title-and-positioning-skill)
+4. [Book-to-Content Repurposing](https://github.com/NFTYoginis/book-to-content-repurposing-skill)
+5. [Fact, Claim & Evidence Verification](https://github.com/NFTYoginis/fact-claim-verification-skill)
+6. [Book Launch & Funnel Strategy](https://github.com/NFTYoginis/book-launch-funnel-strategy-skill)
+
+Next: [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill). All six: [Book Production Skills](https://github.com/NFTYoginis/book-production-skills).
+
 ## License
 
 MIT — see `LICENSE`.
+
+---
+
+Built by Gabe at The Quiet Ai. The Quiet Scribe Suite (early access) carries your context from one AI tool to the next: [thequietscribe.com](https://thequietscribe.com)
