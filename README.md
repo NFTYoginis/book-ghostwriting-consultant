@@ -55,8 +55,9 @@ The book-production shelf, numbered as in the catalog. The skill in this repo is
 4. [Book-to-Content Repurposing](https://github.com/NFTYoginis/book-to-content-repurposing-skill)
 5. [Fact, Claim & Evidence Verification](https://github.com/NFTYoginis/fact-claim-verification-skill)
 6. [Book Launch & Funnel Strategy](https://github.com/NFTYoginis/book-launch-funnel-strategy-skill)
+7. [Book Format & Interior-Image Integrity](https://github.com/NFTYoginis/book-format-integrity-skill)
 
-Next: [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill). All six: [Book Production Skills](https://github.com/NFTYoginis/book-production-skills).
+Next: [Publishing Preparation](https://github.com/NFTYoginis/publishing-preparation-skill). All seven: [Book Production Skills](https://github.com/NFTYoginis/book-production-skills).
 
 ## License
 
